@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .border {
+            border: 10px solid;
+            border-image: repeating-linear-gradient(45deg, darkblue, darkblue 10px, cyan 10px, cyan 20px) 10;
+            position: relative;
+            padding: 20px;
+        }
+        .border::before {
+            content: "";
+            background: url('park_images/background_4.jpg') no-repeat center center;
+            background-size: cover;
+            opacity: 0.2;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: cyan;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar a {
+            display: inline-block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .title {
+            font-family: 'Dancing Script', cursive;
+            text-align: center;
+            font-size: 3em;
+            margin-top: 20px;
+        }
+        .description {
+            text-align: center;
+            font-size: 1.2em;
+            margin: 20px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <div class="border">
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="national_parks.html">Parks</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="contact.html">Contact</a>
+            <a href="additional_images.html">Additional Pictures</a>
+        </div>
+
+        <h1 class="title">About Us</h1>
+
+        <div class="description">
+            <p>Welcome to our unofficial national parks website dedicated to preserving the natural beauty and heritage of Florida's national parks. Our mission is to raise awareness and support for the Everglades, Dry Tortugas, Big Cypress, Timucuan, and every other national park of FLorida, ensuring they remain pristine and accessible for future generations to enjoy.</p>
+        </div>
+
+        <div class="footer">
+            &copy; Created by Connor Spalding, 2024
+        </div>
+    </div>
+</body>
+</html>
